@@ -1,0 +1,208 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+
+
+    .groupCardbox {
+        overflow: hidden;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        align-items: stretch;
+        border-top: 1px solid var(--red);
+        border-left: 1px solid var(--red);
+        background: linear-gradient(291deg, transparent 108px, var(--red) 0);
+
+        &__text {
+            & h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                color: white;
+            }
+
+            & span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+            }
+        }
+    }
+
+    .groupCard {
+        position: relative;
+        display: grid;
+
+        grid-template-columns: 60% 40%;
+
+        overflow: hidden;
+        min-height: 255px;
+        cursor: pointer;
+        min-width: 500px;
+
+    }
+
+    .rateCard {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        overflow: hidden;
+        min-height: 255px;
+        cursor: pointer;
+        min-width: 500px;
+
+
+        &__box {
+            color: var(--white);
+            border-top: 1px solid var(--red);
+            border-left: 1px solid var(--red);
+            border-bottom: 1px solid var(--red);
+            background: linear-gradient(135deg, transparent 25px, var(--red) 0);
+            // background-image: linear-gradient(45deg, var(--white) 67%, transparent 25px), linear-gradient(45deg, var(--white) 67%, transparent 67%, red 67.25%);
+
+        }
+    }
+
+    .redCircle {
+        position: absolute;
+    }
+
+    .rateCardbox {
+        padding: 30px;
+        display: grid;
+        align-items: flex-end;
+        justify-content: end;
+        border-top: 1px solid var(--red);
+        border-bottom: 1px solid var(--red);
+        background-image: linear-gradient(281deg, var(--red) 45%, transparent 30px);
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .placeInRateSelection__place_wrapper {
+
+
+    }
+
+    .placeInTalentSelection {
+        border-top: 1px solid var(--red);
+        height: 100%;
+
+        & svg {
+            height: inherit;
+        }
+    }
+}
+
+
+
+    .placeInGroupSelection {
+
+            top: 45px;
+            right: 25px;
+            color: var(--white);
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            line-height: 17px;
+            display: flex;
+            gap: 10px;
+        
+    }
+
+    .placeInTalentSelection {
+        position: relative;
+
+        div {
+            position: absolute;
+            font-family: 'Montserrat';
+            font-style: normal;
+            text-align: center;
+            color: var(--red);
+            top: 25%;
+            left: 20%;
+        }
+
+    }
+
+    .placeInRateSelection {
+        font-family: "Montserrat";
+
+        &__place_wrapper {
+            color: white;
+            top: 100px;
+            left: -333px;
+        }
+
+
+        &__place {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            color: var(--red);
+        }
+
+        &__place_title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 16px;
+            color: var(--red);
+        }
+
+        svg {
+            position: relative;
+        }
+
+        div {
+            position: absolute;
+            top: 100px;
+            left: 120px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            line-height: 135%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+    }
+
+
+@media screen and (max-width: 900px) {
+    .root {
+        grid-template-columns: 1fr;
+    }
+
+    .placeInTalentSelection {
+        &__wrapper {
+            position: absolute;
+            top: 70px;
+            right: 90px;
+            color: #fff;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &__place_title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 16px;
+            color: var(--white);
+        }
+
+        &__place {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            color: var(--white);
+        }
+    }
+
+
+}

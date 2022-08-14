@@ -1,0 +1,39 @@
+.root {
+    width: 100%;
+    position: relative;
+    & .img {
+        position: absolute;
+        right: -30px;
+        top: -45px;
+    }
+
+    & h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    &__person_card {
+        background-color: none;
+    }
+
+    &__person_card_wrapper {
+        display: grid;
+        justify-content: flex-start;
+    }
+
+    &__group_collaborators {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__group_collaborators_box{
+        width: auto;
+    }
+
+    &__group_collaborator_card {
+        justify-content: flex-start;
+        max-width: 350px;
+    }
+}

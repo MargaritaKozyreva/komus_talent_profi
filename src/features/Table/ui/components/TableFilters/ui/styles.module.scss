@@ -1,0 +1,37 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    & button{
+        cursor: pointer;
+    }
+
+
+    &__btn_active {
+        background: var(--red);
+        color: var(--white);
+        border: 1px solid #F2F2F2;
+        padding: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    &__btn {
+        background: var(--white);
+        border: 1px solid #F2F2F2;
+        padding: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: var(--black);
+
+        &:hover {
+            background: linear-gradient(267.26deg, #AE0000 4.03%, #EB0000 97.87%);
+            color: var(--white);
+            border-color: none;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="318"
+     height="257"
+     viewBox="0 0 318 257"
+     fill="none">
+<circle cx="209"
+        cy="133"
+        r="209"
+        fill="url(#paint0_linear_3952_1850)" />
+<defs>
+<linearGradient id="paint0_linear_3952_1850"
+                x1="209"
+                y1="-76"
+                x2="209"
+                y2="342"
+                gradientUnits="userSpaceOnUse">
+<stop stop-color="#AE0000" />
+<stop offset="1"
+      stop-color="#EB0000" />
+</linearGradient>
+</defs>
+</svg>

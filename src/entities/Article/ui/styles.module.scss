@@ -1,0 +1,44 @@
+.root {
+    position: relative;
+    z-index: 100;
+    padding: 30px;
+
+    &_cursor_pointer{
+        cursor: pointer;
+    }
+
+    &_type {
+        &_horizont {
+            background: #FFFFFF;
+            border: 1px solid #F2F2F2;
+            border-radius: 15px;
+            &_image {}
+
+        }
+
+        &_vertical {
+            display: flex;
+            align-items: center;
+            width: 320px;
+            height: 667px;
+            left: 40px;
+            top: 994px;
+
+            background: #FFFFFF;
+            border: 1px solid #F2F2F2;
+            border-radius: 15px;
+
+
+            &_image {}
+        }
+
+        &_cube {
+            margin: 0 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: linear-gradient(0deg, #F2F2F2, #F2F2F2), #FFFFFF;
+            border-radius: 15px;
+        }
+    }
+}

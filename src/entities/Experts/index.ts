@@ -1,0 +1,1 @@
+export * as expertModel from './model'

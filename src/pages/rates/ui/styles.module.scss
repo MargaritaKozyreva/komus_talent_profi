@@ -1,0 +1,55 @@
+.root {
+    display: grid;
+    grid-template-columns: auto 330px;
+    gap: 33px;
+
+    &__talent_widget {
+        width: 322px;
+
+        & button {
+            width: 322px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__talent_wrapper {
+        position: relative;
+        margin-bottom: 15px;
+        height: 275px;
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        overflow: hidden;
+        background-image: linear-gradient(-7deg, var(--red) 59%, transparent 25px);
+
+
+
+        &_title {
+            position: absolute;
+            top: 30px;
+            right: 35%;
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--default-text);
+        }
+
+        &_place {
+            position: absolute;
+            font-weight: 700;
+            font-size: 100px;
+            top: 125px;
+            right: 117px;
+            z-index: 1;
+            color: var(--white);
+        }
+
+        & img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+    }
+}
