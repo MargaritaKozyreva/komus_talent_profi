@@ -30,14 +30,14 @@ const Layout: React.FC<LayoutProps> = props => {
   }, [dispatch]);
 
   return (
-    <div>
+    <>
       <Header />
       <div className={cn(styles.root, className)}>
-        {location.pathname === "/komus_talents_profi" && <NewsSection />}
+        {location.pathname === "/komus_profi_talents" && <NewsSection />}
         {children}
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

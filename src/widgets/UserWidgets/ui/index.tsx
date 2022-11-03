@@ -132,9 +132,9 @@ const UserWidgets: React.FC<userWidgetsProps> = props => {
               <span>место в группе</span>
             </div>
 
-            <Link to={"/komus_talents_profi/rates"}>
+            <Link to={"/komus_profi_talents/rates"}>
               <Button type="button" mode="white" arrowColor={"red"}>
-              Подробнее
+                Подробнее
               </Button>
             </Link>
           </div>

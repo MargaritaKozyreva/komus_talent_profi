@@ -3,8 +3,6 @@
     gap: 15px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     position: relative;
     grid-template-areas:
         "card-0 card-1 card-1 card-6"
@@ -89,7 +87,7 @@
     .birdForCard6 {
         position: absolute;
         right: 51px;
-        bottom: 332px;
+        bottom: 400px;
     }
 
 
@@ -153,8 +151,8 @@
         background-repeat: no-repeat;
         background-position-x: right;
         top: 0;
-        position: sticky;
-        height: 748px;
+        // position: sticky;
+        height: 100%;
         margin-left: 10px;
 
     }
@@ -172,7 +170,7 @@
 
 @media screen and (max-width: 1350px) {
     .root {
-        margin:  0 auto;
+        margin: 0 auto;
         grid-template-areas:
             "card-6"
             "card-0"
@@ -192,6 +190,12 @@
     .card-6 {
         padding: 30px;
         height: 235px;
+        background-image: linear-gradient(39deg, var(--ghost) 55%, transparent 25px), linear-gradient(39deg, var(--ghost) 55%, transparent 25px) !important;
+        border: 1px solid var(--ghost) !important;
+
+        svg {
+            display: none !important;
+        }
     }
 
     .card-1 {

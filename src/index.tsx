@@ -23,16 +23,16 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/view_doc.html?mode=komus_talents_profi"
+            path="/view_doc.html?mode=komus_profi_talents"
             element={
               <PrivatePage>
                 <Main />
               </PrivatePage>
             }
           />
-          <Route path="/komus_talents_profi/pre" element={<PreMain />} />
+          <Route path="/komus_profi_talents/pre" element={<PreMain />} />
           <Route
-            path="/komus_talents_profi"
+            path="/komus_profi_talents"
             element={
               <PrivatePage>
                 <Main />
@@ -40,7 +40,7 @@ const App = () => {
             }
           />
           <Route
-            path="/komus_talents_profi/rates"
+            path="/komus_profi_talents/rates"
             element={
               <PrivatePage>
                 <RatePage />
@@ -48,7 +48,7 @@ const App = () => {
             }
           />
           <Route
-            path="/komus_talents_profi/roadmap"
+            path="/komus_profi_talents/roadmap"
             element={
               <PrivatePage>
                 <RoadmapWidget />
@@ -56,7 +56,7 @@ const App = () => {
             }
           />
           <Route
-            path="/komus_talents_profi/group"
+            path="/komus_profi_talents/group"
             element={
               <PrivatePage>
                 <UserGroupWidget />
@@ -64,7 +64,7 @@ const App = () => {
             }
           />
           <Route
-            path="/komus_talents_profi/experts"
+            path="/komus_profi_talents/experts"
             element={
               <PrivatePage>
                 <ExpertsWidget />
@@ -72,7 +72,7 @@ const App = () => {
             }
           />
           <Route
-            path="/komus_talents_profi/curators"
+            path="/komus_profi_talents/curators"
             element={
               <PrivatePage>
                 <CuratorsWidget />

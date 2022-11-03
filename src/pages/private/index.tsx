@@ -44,7 +44,11 @@ const PrivatePage: React.FC<Props> = (props: any) => {
   if (status === null) {
     return <Spinner />;
   }
-  return status === true ? children : <Navigate to="/komus_talents_profi/pre" />;
+  return status === true ? (
+    children
+  ) : (
+    <Navigate to="/komus_profi_talents/pre" />
+  );
 };
 
 export { PrivatePage };

@@ -36,21 +36,21 @@ const Header: React.FC<HeaderProps> = props => {
       className={cn(styles.root, className)}
       style={{
         maxWidth: "1440px",
-        minWidth: "1100px",
+        minWidth: "1250px",
         backgroundImage:
           "linear-gradient(-129deg, var(--red) 40%, transparent 45px)",
       }}
     >
       <div className={styles.mainMenu__wrapper}>
-        <MainLogo className={styles.mainMenu__logo}>
-          <Link to="/komus_talents_profi">
+        <Link to="/komus_profi_talents">
+          <MainLogo className={styles.mainMenu__logo}>
             <img
               src={`${process.env["PUBLIC"]}/images/KomusCifraLogo.svg`}
               alt="logo"
               title="logo"
             />
-          </Link>
-        </MainLogo>
+          </MainLogo>
+        </Link>
         <div className={styles.mainText}>
           <span className={styles.small}>Таланты _ Лига профессионалов</span>
           <span className={styles.big}>Взлетай высоко!</span>
@@ -78,7 +78,7 @@ const Header: React.FC<HeaderProps> = props => {
               )}{" "}
             </WithSkeleton>
             <WhiteBird className={styles.whiteBird} />
-            <GrayLines className={styles.grayLines}/>
+            <GrayLines className={styles.grayLines} />
           </div>
         </div>
       </div>

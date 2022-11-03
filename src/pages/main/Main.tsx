@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 
 const Main: React.FC<any> = () => {
   return (
-    <div>
+    <>
       <div className={cn(styles.userWidgetWrapper)}>
         <UserWidgets />
       </div>
@@ -22,7 +22,7 @@ const Main: React.FC<any> = () => {
           linkTo={`mailto:myv_dp@bony.komus.net?subject=Обратная Связь по Комус Талантам`}
         />
       </div>
-    </div>
+    </>
   );
 };
 

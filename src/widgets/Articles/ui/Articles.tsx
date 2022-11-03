@@ -90,6 +90,24 @@ const Articles = () => {
               ProgramContext.getAboutProgram({ programCode: "about_program" }),
           },
         };
+      case "contacts":
+        return {
+          ModalKey: ModalKey.NewsWidget,
+          withBackground: true,
+          payload: {
+            onClick: () =>
+              ProgramContext.getContacts({ programCode: "contacts" }),
+          },
+        };
+      case "instruction":
+        return {
+          ModalKey: ModalKey.NewsWidget,
+          withBackground: true,
+          payload: {
+            onClick: () =>
+              ProgramContext.getInstructions({ programCode: "instructions" }),
+          },
+        };
       default:
         return { ModalKey: ModalKey.Default, withBackground: true };
     }
@@ -98,12 +116,8 @@ const Articles = () => {
   const dispatch = useDispatch();
 
   const onClickHandler = (groupId: string, articleKey: string) => {
-    if (articleKey === "contacts") {
-      window.location.href = "/komus_talents_profi";
-    } else if (articleKey === "calendar") {
-      window.location.href = "/komus_talents_profi";
-    } else if (articleKey === "instruction") {
-      window.location.href = "/komus_talents_profi";
+    if (articleKey === "calendar") {
+      window.location.href = "/komus_profi_talents";
     } else {
       dispatch(
         modalActions.showModal({
@@ -128,6 +142,7 @@ const Articles = () => {
               <div
                 className={cn(styles[`card-${i}`])}
                 style={setCustomStyle(i)}
+                key={item.articleId}
               >
                 {/* <div className={cn(styles[`card-${i}`])}> */}
                 <ArticleCard
